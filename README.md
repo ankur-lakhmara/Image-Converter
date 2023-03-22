@@ -8,6 +8,9 @@ I am using the GraphicsMagick library to convert the uploaded image into `jpg` f
 - upload any type of image and click on `convert image` button
 - your `jpg` file will download automatically into your system as a `output.jpg` name
 
+![image converter ](https://user-images.githubusercontent.com/59440628/226836753-34a8d9c5-0886-4fa1-9973-2feef80f5c99.gif)
+
+
 ### Warning : this app may show you these errors :
 
 ![image](https://user-images.githubusercontent.com/59440628/226833573-f18d7256-78fb-476b-8cf5-3b6f0a116383.png)
