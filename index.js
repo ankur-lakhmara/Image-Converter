@@ -2,6 +2,7 @@ const express = require("express");
 const bodyparser = require("body-parser");
 const multer = require("multer");
 const path = require("path");
+const fs = require("fs");
 const gm = require("gm");
 
 const app = express();
@@ -34,7 +35,7 @@ app.post("/", upload.single("image"), (req, res) => {
     res.send("please upload a image!");
   }
   console.log(req.file.path);
-  gm(req.file.path).write("/path/to/resize.png", function (err) {
+  gm(req.file.path).write("output.jpg", function (err) {
     if (err) console.log(err);
     res.download("output.jpg");
   });
