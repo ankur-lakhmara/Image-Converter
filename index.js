@@ -39,7 +39,7 @@ app.post("/", upload.single("image"), (req, res) => {
     if (err) console.log(err);
     res.download("output.jpg");
   });
-});
+}); //for changing the extension of the uploaded image and download !
 
 app.listen(5000, () => {
   console.log("Server is listening on post 5000");
